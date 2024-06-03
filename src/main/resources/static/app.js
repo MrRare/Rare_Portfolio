@@ -89,3 +89,7 @@ contactButton.addEventListener('click', () => {
         </div>`,
         'flex items-center justify-center h-full w-full bg-black-800 rounded-lg transition-all duration-1000');
 });
+git add .
+git commit -m "Updated styles and script for smooth shape transition effect"
+git remote add origin https://github.com/MrRare/Rare_Portfolio
+git push origin main
