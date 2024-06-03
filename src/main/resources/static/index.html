@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white flex flex-col items-center justify-center h-screen">
+
+<!-- Main Content Area -->
+<div id="mainContent" class="flex items-center justify-center h-4/5 w-4/5 rounded-lg transition-all duration-1000">
+    <div id="content" class="text-center text-2xl"></div>
+</div>
+
+
+<!-- Floating Control Buttons -->
+<div class="fixed bottom-4 left-4 flex flex-col space-y-4">
+    <button id="speakButton" class="text-white">Speak</button>
+    <button id="typeButton" class="text-white">Type</button>
+    <button id="introductionButton" class="text-white">Introduction</button>
+    <button id="projectsButton" class="text-white">Projects</button>
+    <button id="contactButton" class="text-white">Contact</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
