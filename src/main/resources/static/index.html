@@ -9,19 +9,30 @@
 </head>
 <body class="bg-black text-white flex flex-col items-center justify-center min-h-screen">
 <!-- Main Content Area -->
-<div id="mainContent" class="flex items-center justify-center h-4/5 w-4/5 rounded-lg transition-all duration-1000">
-    <div id="content" class="text-center text-2xl"></div>
+<div id="mainContent" class="flex items-center justify-center h-4/5 w-4/5 rounded-lg transition-all duration-1000 bg-white text-black p-8 overflow-y-auto">
+    <div id="content" class="text-center text-2xl">
+        <p>Ask me anything, either type or speak.</p>
+    </div>
 </div>
 
 <!-- Floating Control Buttons -->
-<div class="fixed bottom-4 left-4 flex flex-col space-y-4">
-    <button id="speakButton" class="text-white">Speak</button>
-    <button id="typeButton" class="text-white">Type</button>
-    <button id="introductionButton" class="text-white">Introduction</button>
-    <button id="projectsButton" class="text-white">Projects</button>
-    <button id="contactButton" class="text-white">Contact</button>
+<div class="fixed bottom-4 left-1/2 transform -translate-x-1/2 flex flex-col items-center space-y-4">
+    <div class="flex flex-row space-x-4">
+        <button id="introductionButton" class="chatgpt-button">Introduction</button>
+        <button id="projectsButton" class="chatgpt-button">Projects</button>
+        <button id="contactButton" class="chatgpt-button">Contact</button>
+    </div>
+    <div class="flex items-center bg-black text-white rounded-lg">
+        <input id="inputBox" type="text" placeholder="Type here..." class="chatgpt-input">
+        <button id="speakButton" class="chatgpt-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18v.01M8.29 16.29a1 1 0 00-1.42 1.42l3.51 3.51a1 1 0 001.42 0l3.51-3.51a1 1 0 00-1.42-1.42L13 17.59V10a4 4 0 10-8 0v7.59l-.29-.3z" />
+            </svg>
+        </button>
+    </div>
 </div>
 
 <script src="app.js"></script>
 </body>
 </html>
+
